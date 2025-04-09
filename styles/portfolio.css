@@ -177,20 +177,34 @@ footer textarea {
   border: none;
 }
 
-.hide {
-  display: none;
-}
-
 @media screen and (max-width: 576px) {
   .skills-container,
   .resume-container,
   footer,
+  .banner,
+  nav,
+  nav > ul,
   .about-items {
     flex-direction: column;
   }
   footer,
   .about {
     padding: 20px;
+  }
+  nav > ul {
+    gap: 20px;
+  }
+  .btn-primary {
+    margin-bottom: 20px;
+  }
+  .banner {
+    margin: 20px;
+  }
+  .banner-profile-picture {
+    width: 100%;
+  }
+  .header {
+    background-image: none;
   }
   .footer-column {
     width: 100%;
