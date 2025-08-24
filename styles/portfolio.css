@@ -1,0 +1,223 @@
+.open-sans-normal {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/*Shared Style*/
+.secondary-bg {
+  background-color: #fff8f3;
+}
+.text-primary {
+  color: #fd6e0a;
+}
+.dark-2 {
+  color: #474747;
+}
+.btn-primary {
+  background-color: #fd6e0a;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  border: none;
+  padding: 18px 35px;
+  border-radius: 5px;
+}
+
+.btn-primary-outline {
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fd6e0a; /* Text color is the same as the original background */
+  border: 2px solid #fd6e0a; /* Border color matches the original background */
+  padding: 18px 35px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.btn-primary-outline:hover {
+  background-color: #fd6e0a;
+  color: white; /* Invert back on hover */
+  border: 2px solid #fd6e0a;
+}
+.section-title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #181818;
+}
+.section-description {
+  font-size: 18px;
+  color: #757575;
+}
+.text-center {
+  text-align: center;
+}
+/* header */
+.header {
+  background-image: url("../images/developer.png"),
+    url("../images/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+/* Nav Styles*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 200px;
+}
+.nav-title {
+  font-weight: 800;
+  font-size: 45px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 50px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* banner styles */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35px 0 200px;
+}
+.banner-greetings {
+  font-size: 45px;
+  font-weight: 600;
+}
+.banner-title {
+  font-size: 85px;
+  font-weight: bold;
+}
+.banner-profile-picture {
+  width: 580px;
+}
+/* main styles */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+main section {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+/* about style */
+.about {
+  border-radius: 10px;
+  padding: 130px 150px;
+  text-align: center;
+}
+.about-items {
+  display: flex;
+  justify-content: space-around;
+}
+.item-title {
+  margin-bottom: 0;
+}
+.item-description {
+  margin-top: 0;
+  font-weight: 600;
+}
+/* skills */
+.skills-container {
+  display: flex;
+  gap: 24px;
+}
+.skill {
+  padding: 30px;
+  box-shadow: 0 6px 50px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+}
+/* resume section */
+.resume-container {
+  display: flex;
+  gap: 24px;
+}
+.experience-sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.experience-description,
+.experience-sub-title {
+  color: #757575;
+}
+.resume hr {
+  margin: 30px;
+}
+.resume-download-cv {
+  margin-top: 50px;
+}
+/* footer style */
+footer {
+  padding: 130px 200px;
+  display: flex;
+  gap: 100px;
+}
+.footer-column {
+  width: 50%;
+}
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
+  /* height: 64px; */
+  border-radius: 5px;
+  background-color: white;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 24px;
+  border: none;
+}
+
+@media screen and (max-width: 576px) {
+  .skills-container,
+  .resume-container,
+  footer,
+  .banner,
+  nav,
+  nav > ul,
+  .about-items {
+    flex-direction: column;
+  }
+  footer,
+  .about {
+    padding: 20px;
+  }
+  nav > ul {
+    gap: 20px;
+  }
+  .btn-primary {
+    margin-bottom: 20px;
+  }
+  .banner {
+    margin: 20px;
+  }
+  .banner-profile-picture {
+    width: 100%;
+  }
+  .header {
+    background-image: none;
+  }
+  .footer-column {
+    width: 100%;
+  }
+  footer input[type="text"],
+  footer input[type="email"],
+  footer textarea {
+    width: calc(100% - 40px);
+  }
+}
+/* tablet specific media queries */
+@media screen and (min-width: 576px) and (max-width: 990px) {
+  .banner {
+    flex-direction: column;
+  }
+}
